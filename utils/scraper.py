@@ -36,7 +36,7 @@ def scrape_article(url: str) -> dict:
         # Fallback: BeautifulSoup
         resp = requests.get(url, headers=HEADERS, timeout=10)
         resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, "lxml")
+        soup = BeautifulSoup(resp.text, "html.parser")
 
         # Remove nav, footer, scripts
         for tag in soup(["script", "style", "nav", "footer",
