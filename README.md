@@ -97,8 +97,6 @@ news_summarizer/
 | ROUGE-2 (pretrained) | ~18 |
 | ROUGE-2 (fine-tuned) | ~21–22 |
 
-## What makes this project stand out
-
 - **Actually fine-tunes the model** — not just an API wrapper
 - **ROUGE evaluation** — quantitative benchmark, same metric used in ACL papers
 - **Baseline vs fine-tuned comparison** — shows the value added by training
